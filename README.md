@@ -1,7 +1,7 @@
 # Jira-Issue-Card-Printer
-Beautiful Jira Issue Card Printer
+Nice Jira Issue Card Printer
 
-I've written a little bookmarklet for converting Jira issues in a pretty card layout for printing.
+Based on qooomon's JIRA Issue Card Printer
 
 So long
 Bengt
@@ -44,6 +44,4 @@ search for issues und select *List View*
 * **YouTrack**
 
 ###Info
-I make use of **Google Analytics** to get some usage feedback. Please let me.
-I will only track the **pageview** and the **amount of rendered cards**
-**I do and will not track anything else**
+I have removed google analytics completely.

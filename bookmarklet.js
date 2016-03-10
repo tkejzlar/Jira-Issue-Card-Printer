@@ -1,12 +1,7 @@
 (function() {
-  // Public Instances
-  // Jira: https://connect.atlassian.net/browse/NERDS-33286
-  // PivotTracker: https://www.pivotaltracker.com/n/projects/510733
-  // Trello: https://trello.com/b/8zlPSh70/spike
-  // YouTrack: http://rmxro.myjetbrains.com/youtrack/dashboard
 
   var global = {};
-  global.version = "4.4.0";
+  global.version = "R_4.4.1";
   global.issueTrackingUrl = "https://github.com/rmxro/Jira-Issue-Card-Printer";
 
   global.isDev = document.currentScript == null;

@@ -3,11 +3,11 @@
   // Jira: https://connect.atlassian.net/browse/NERDS-33286
   // PivotTracker: https://www.pivotaltracker.com/n/projects/510733
   // Trello: https://trello.com/b/8zlPSh70/spike
-  // YouTrack: http://qoomon.myjetbrains.com/youtrack/dashboard
+  // YouTrack: http://rmxro.myjetbrains.com/youtrack/dashboard
 
   var global = {};
   global.version = "4.4.0";
-  global.issueTrackingUrl = "https://github.com/qoomon/Jira-Issue-Card-Printer";
+  global.issueTrackingUrl = "https://github.com/rmxro/Jira-Issue-Card-Printer";
 
   global.isDev = document.currentScript == null;
 
@@ -111,10 +111,10 @@
     addStringFunctions();
     loadSettings();
 
-    global.hostOrigin = "https://qoomon.github.io/Jira-Issue-Card-Printer/";
+    global.hostOrigin = "https://rmxro.github.io/Jira-Issue-Card-Printer/";
     if (global.isDev) {
       console.log("DEVELOPMENT");
-      global.hostOrigin = "https://rawgit.com/qoomon/Jira-Issue-Card-Printer/develop/";
+      global.hostOrigin = "https://rawgit.com/rmxro/Jira-Issue-Card-Printer/develop/";
     }
     global.resourceOrigin = global.hostOrigin + "resources/";
 
@@ -123,7 +123,7 @@
     }));
 
     promises.push(httpGetCORS(global.hostOrigin + "card.css").then(function(data){
-      global.cardCss = data.replace(/https:\/\/qoomon.github.io\/Jira-Issue-Card-Printer\/resources/g, global.resourceOrigin);
+      global.cardCss = data.replace(/https:\/\/rmxro.github.io\/Jira-Issue-Card-Printer\/resources/g, global.resourceOrigin);
     }));
 
     promises.push(httpGetCORS(global.hostOrigin + "printPreview.html").then(function(data){
@@ -131,7 +131,7 @@
     }));
 
     promises.push(httpGetCORS(global.hostOrigin + "printPreview.css").then(function(data){
-      global.printPreviewCss = data.replace(/https:\/\/qoomon.github.io\/Jira-Issue-Card-Printer\/resources/g, global.resourceOrigin);
+      global.printPreviewCss = data.replace(/https:\/\/rmxro.github.io\/Jira-Issue-Card-Printer\/resources/g, global.resourceOrigin);
     }));
 
     return Promise.all(promises);
@@ -418,12 +418,12 @@
 
     // info
     result.find("#report-issue").click(function(event) {
-      window.open('https://github.com/qoomon/Jira-Issue-Card-Printer/issues');
+      window.open('https://github.com/rmxro/Jira-Issue-Card-Printer/issues');
       return false;
     });
 
     result.find("#about").click(function(event) {
-      window.open('http://qoomon.blogspot.de/2014/01/jira-issue-card-printer-bookmarklet.html');
+      window.open('http://rmxro.blogspot.de/2014/01/jira-issue-card-printer-bookmarklet.html');
       return false;
     });
 
@@ -546,7 +546,7 @@
     return result;
   }
 
-  // card layout: http://jsfiddle.net/qoomon/ykbLb2pw/76
+  // card layout: http://jsfiddle.net/rmxro/ykbLb2pw/76
 
   function cardElement(issueKey) {
     var result = $('<div/>').html(global.cardHtml).contents()

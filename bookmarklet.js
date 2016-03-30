@@ -102,7 +102,7 @@
     console.log("Init...0");
 
     addStringFunctions();
-    console.log("Init...1");
+    console.log("Init... " + version);
 
     loadSettings();
     console.log("Init...2");

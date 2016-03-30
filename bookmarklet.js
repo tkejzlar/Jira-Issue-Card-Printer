@@ -31,7 +31,7 @@
       return;
     }
 
-    console.log("Run...")
+    console.log("Run...");
     // determine application
     if ($("meta[name='application-name'][ content='JIRA']").length > 0) {
       console.log("App: " + "Jira");
@@ -99,13 +99,13 @@
 
   function init() {
     var promises = [];
-    console.log("Init...0")
+    console.log("Init...0");
 
     addStringFunctions();
-    console.log("Init...1")
+    console.log("Init...1");
 
     loadSettings();
-    console.log("Init...2")
+    console.log("Init...2");
 
     global.hostOrigin = "https://rmxro.github.io/Jira-Issue-Card-Printer/";
     if (global.isDev) {
@@ -113,26 +113,26 @@
       global.hostOrigin = "https://rawgit.com/rmxro/Jira-Issue-Card-Printer/develop/";
     }
     global.resourceOrigin = global.hostOrigin + "resources/";
-        console.log("Init...3")
+        console.log("Init...3");
 
     promises.push(httpGetCORS(global.hostOrigin + "card.html").then(function(data){
       global.cardHtml = data;
     }));
-    console.log("Init...4")
+    console.log("Init...4");
     promises.push(httpGetCORS(global.hostOrigin + "card.css").then(function(data){
       global.cardCss = data.replace(/https:\/\/rmxro.github.io\/Jira-Issue-Card-Printer\/resources/g, global.resourceOrigin);
     }));
-    console.log("Init...5")
+    console.log("Init...5");
     promises.push(httpGetCORS(global.hostOrigin + "printPreview.html").then(function(data){
       global.printPreviewHtml = data
     }));
-    console.log("Init...6")
+    console.log("Init...6");
     promises.push(httpGetCORS(global.hostOrigin + "printPreview.css").then(function(data){
       global.printPreviewCss = data.replace(/https:\/\/rmxro.github.io\/Jira-Issue-Card-Printer\/resources/g, global.resourceOrigin);
     }));
-    console.log("Init...7")
+    console.log("Init...7");
     return Promise.all(promises);
-        console.log("Init... Done")
+    console.log("Init... Done");
   }
 
   function handleError(error){

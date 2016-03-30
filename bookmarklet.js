@@ -605,6 +605,7 @@
     //arguments[0] = 'http://cors.io/?u=' + arguments[0];
     arguments[0] = 'https://crossorigin.me/' + arguments[0];
     return httpGet.apply(this, arguments);
+    console.log("httpGetCORS for " + arguments[0] + " done.");
   }
 
   function httpGet(){

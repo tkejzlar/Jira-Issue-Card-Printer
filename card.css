@@ -140,6 +140,15 @@ body {
 .issue-description p:last-of-type {
   margin-bottom: 0rem;
 }
+.issue-checklists {
+  font-size: .7rem;
+  position: absolute;
+  left: 2.5rem;
+  top: 2rem;
+}
+.issue-checklists ul {
+  list-style-type: circle;
+}
 .issue-id {
   position: absolute;
   left: 1rem;

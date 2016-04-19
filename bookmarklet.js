@@ -2,7 +2,7 @@
 
   var global = {};
   global.version = "R_4.4.2";
-  global.issueTrackingUrl = "https://github.com/rmxro/Jira-Issue-Card-Printer";
+  global.issueTrackingUrl = "https://github.com/tkejzlar/Jira-Issue-Card-Printer";
 
   global.isDev = document.currentScript == null;
 
@@ -107,10 +107,10 @@
     loadSettings();
     console.log("Init...2");
 
-    global.hostOrigin = "https://rmxro.github.io/Jira-Issue-Card-Printer/";
+    global.hostOrigin = "https://tkejzlar.github.io/Jira-Issue-Card-Printer/";
     if (global.isDev) {
       console.log("DEVELOPMENT");
-      global.hostOrigin = "https://rawgit.com/rmxro/Jira-Issue-Card-Printer/develop/";
+      global.hostOrigin = "https://rawgit.com/tkejzlar/Jira-Issue-Card-Printer/develop/";
     }
     global.resourceOrigin = global.hostOrigin + "resources/";
         console.log("Init...3");
@@ -120,7 +120,7 @@
     }));
     console.log("Init...4");
     promises.push(httpGetCORS(global.hostOrigin + "card.css").then(function(data){
-      global.cardCss = data.replace(/https:\/\/rmxro.github.io\/Jira-Issue-Card-Printer\/resources/g, global.resourceOrigin);
+      global.cardCss = data.replace(/https:\/\/tkejzlar.github.io\/Jira-Issue-Card-Printer\/resources/g, global.resourceOrigin);
     }));
     console.log("Init...5");
     promises.push(httpGetCORS(global.hostOrigin + "printPreview.html").then(function(data){
@@ -128,7 +128,7 @@
     }));
     console.log("Init...6");
     promises.push(httpGetCORS(global.hostOrigin + "printPreview.css").then(function(data){
-      global.printPreviewCss = data.replace(/https:\/\/rmxro.github.io\/Jira-Issue-Card-Printer\/resources/g, global.resourceOrigin);
+      global.printPreviewCss = data.replace(/https:\/\/tkejzlar.github.io\/Jira-Issue-Card-Printer\/resources/g, global.resourceOrigin);
     }));
     console.log("Init...7");
     return Promise.all(promises);
@@ -416,7 +416,7 @@
 
     // info
     result.find("#report-issue").click(function(event) {
-      window.open('https://github.com/rmxro/Jira-Issue-Card-Printer/issues');
+      window.open('https://github.com/tkejzlar/Jira-Issue-Card-Printer/issues');
       return false;
     });
 

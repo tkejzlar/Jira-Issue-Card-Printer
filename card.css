@@ -144,10 +144,13 @@ body {
   font-size: .7rem;
   position: absolute;
   left: 2.5rem;
-  top: 2rem;
+  top: 1.5rem;
+  width: 2rem;
 }
 .issue-checklists ul {
-  list-style-type: circle;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 .issue-id {
   position: absolute;

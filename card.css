@@ -197,20 +197,28 @@ body {
 }
 .issue-icon[type="story"], .issue-icon[type="user story"] {
   background-color: GOLD;
-  background-image: url(https://rmxro.github.io/Jira-Issue-Card-Printer/resources/icons/Bulb.png);
+  background-image: url(https://rmxro.github.io/Jira-Issue-Card-Printer/resources/icons/story.png);
 }
 .issue-icon[type="bug"], .issue-icon[type="problem"], .issue-icon[type="correction"]  {
   background-color: CRIMSON;
-  background-image: url(https://rmxro.github.io/Jira-Issue-Card-Printer/resources/icons/Bug.png);
+  background-image: url(https://rmxro.github.io/Jira-Issue-Card-Printer/resources/icons/bug.png);
 }
 .issue-icon[type="epic"] {
   background-color: ROYALBLUE;
-  background-image: url(https://rmxro.github.io/Jira-Issue-Card-Printer/resources/icons/Flash.png);
+  background-image: url(https://rmxro.github.io/Jira-Issue-Card-Printer/resources/icons/epic.png);
 }
-.issue-icon[type="task"], .issue-icon[type="sub-task"], .issue-icon[type="technical task"]
+.issue-icon[type="task"], .issue-icon[type="technical task"]
 .issue-icon[type="aufgabe"], .issue-icon[type="unteraufgabe"], .issue-icon[type="technische aufgabe"]  {
   background-color: WHEAT;
-  background-image: url(https://rmxro.github.io/Jira-Issue-Card-Printer/resources/icons/Task.png);
+  background-image: url(https://rmxro.github.io/Jira-Issue-Card-Printer/resources/icons/task.png);
+}
+.issue-icon[type="sub-task"] {
+  background-color: WHEAT;
+  background-image: url(https://rmxro.github.io/Jira-Issue-Card-Printer/resources/icons/subtask.png);
+}
+.issue-icon[type="test-case"] {
+  background-color: WHEAT;
+  background-image: url(https://rmxro.github.io/Jira-Issue-Card-Printer/resources/icons/testcase.png);
 }
 .issue-icon[type="new feature"] {
   background-color: LIMEGREEN;
@@ -219,7 +227,7 @@ body {
 .issue-icon[type="improvement"], .issue-icon[type="service request"],
 .issue-icon[type="verbesserung"] {
   background-color: CORNFLOWERBLUE;
-  background-image: url(https://rmxro.github.io/Jira-Issue-Card-Printer/resources/icons/Arrow.png);
+  background-image: url(https://rmxro.github.io/Jira-Issue-Card-Printer/resources/icons/servicerequest.png);
 }
 .issue-icon[type="research"] {
   background-color: MEDIUMTURQUOISE;

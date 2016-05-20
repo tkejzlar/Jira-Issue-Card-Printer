@@ -141,10 +141,10 @@ body {
   margin-bottom: 0rem;
 }
 .issue-checklists {
-  font-size: .7rem;
+  font-size: .6rem;
   position: absolute;
-  left: 2.5rem;
-  top: 1.5rem;
+  right: 1.5rem;
+  bottom: 1rem;
   width: 2rem;
 }
 .issue-checklists ul {

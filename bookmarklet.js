@@ -251,6 +251,10 @@
   function fillCard(card, data) {
     //Key
     card.find('.issue-id').text(data.key);
+    
+    //Color
+    var colid = data.key.split("-").pop()
+    card.find('.issue-color").addClass("c" + colid);
 
     //Type
     card.find(".issue-icon").attr("type", data.type);
